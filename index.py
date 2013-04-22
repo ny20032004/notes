@@ -20,6 +20,7 @@ def list_md_files(folder=None):
     else:
         path = './md/'
     md_files = []
+    folders = []
     if not os.path.exists(path):
         redirect("/")
     files = [(os.path.getmtime(path + x), x)
@@ -30,7 +31,11 @@ def list_md_files(folder=None):
     for mtime, mdfile in files:
         if type_pattern.search(mdfile):
             md_files.append(mdfile.replace(".md", ""))
-    return md_files
+            continue
+        if os.path.isdir(os.path.join(path, mdfile)):
+            folders.append(mdfile)
+            continue
+    return (md_files, folders)
 
 
 def render_md(md_content, md_name):
@@ -59,10 +64,14 @@ def read_md(file_name):
 
 
 def generate_index(folder=None):
-    html = "# Index\n"
-    md_files = list_md_files(folder)
-    for md_file in md_files:
+    html = "# Index\n\n## Folders:\n"
+    md_folder_files = list_md_files(folder)
+    for folder in md_folder_files[1]:
+        html += " 1. [" + folder + "](/" + folder + ")\n"
+    html += "\n\n## Markdown:\n"
+    for md_file in md_folder_files[0]:
         html += " 1. [" + md_file + "](/" + md_file + ")\n"
+
     return render_md(html, 'Index')
 
 
