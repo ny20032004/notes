@@ -59,7 +59,7 @@ def read_md(file_name):
     md_file = open("./md/" + file_name + '.md', 'r')
     if md_file:
         html = md_file.read()
-    html += "\n\n\n[*<<<*Back](/)\n\n\n"
+    html += "\n\n\n[*<<<*Back](javascript:history.back(\))\n\n\n"
     return render_md(html, file_name)
 
 
@@ -91,6 +91,13 @@ def home(folder=None):
         html = read_md(index_path)
     else:
         html = generate_index(folder)
+    return html
+
+
+@route("/!list")
+@route("/!list/<folder:path>")
+def list(folder=None):
+    html = generate_index(folder)
     return html
 
 
