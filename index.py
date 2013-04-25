@@ -70,7 +70,7 @@ def generate_index(folder=None):
         html += " 1. [" + folder + "](/" + folder + ")\n"
     html += "\n\n## Markdown:\n"
     for md_file in md_folder_files[0]:
-        html += " 1. [" + md_file + "](/" + md_file + ")\n"
+        html += " 1. [" + md_file + "](/" + folder + '/' + md_file + ")\n"
 
     return render_md(html, 'Index')
 
