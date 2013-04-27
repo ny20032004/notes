@@ -8,12 +8,12 @@
  1. [Numerical Methods](/Numerical Methods)
  1. [Digital Image Processing](/Digital Image Processing)
 
-#### 想法
- 1. [细节，理解，语言](Thoughts/Details, Understanding and Language Learning)
+#### [想法(Thoughts)](/Thoughts)
+ 1. [细节，理解，语言](/Thoughts/Details, Understanding and Language Learning)
+ 1. [学完大学课程你能做什么？](/Thoughts/What Can You Do After Learning Such Courses)
 
-#### 日志
- 1. [C++ 内置指针与智能指针性能比较](Compare between performance of C++ raw Point and Smart Point) 
- 1. [用 Python 实现的 HTTP 服务器](How to make a simple http server in Python)
- 1. [基于 Python 的远程桌面](Remote Desktop)
- 1. [学完大学课程你能做什么？](What You Can Do After Learning Such Courses)
+#### [折腾(Just Do It)](/Just Do it)
+ 1. [C++ 内置指针与智能指针性能比较](/Just Do it/Compare between performance of C++ raw Point and Smart Point) 
+ 1. [用 Python 实现的 HTTP 服务器](/Just Do it/How to make a simple http server in Python)
+ 1. [基于 Python 的远程桌面](/Just Do it/Remote Desktop)
  
