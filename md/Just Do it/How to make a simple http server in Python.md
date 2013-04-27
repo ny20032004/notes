@@ -3,7 +3,7 @@
  [shonenada](https://github.com/shonenada) written on 2013/4/18
 
 ### The Process of HTTP Transmission 
- *HTTP*, whose full name is "Hypertext Transfer Protocol", is a application-layer protocol.
+ _HTTP_, whose full name is "Hypertext Transfer Protocol", is a application-layer protocol.
 
 Here is a simple introduction to transmission of HTTP.
 

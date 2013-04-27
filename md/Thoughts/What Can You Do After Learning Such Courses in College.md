@@ -1,7 +1,7 @@
 ## What Can You Do After Learning Such Courses in College
  Written by [shonenada](https://github.com/shonenada) on 2013-4-28
 
-　　*现在是凌晨 2:32。早到了该睡觉的时候，只是我怕睡了一觉之后我就把这一切都忘记了。所以趁着还多少有些记忆，记录下来。*
+　　_现在是凌晨 2:32。早到了该睡觉的时候，只是我怕睡了一觉之后我就把这一切都忘记了。所以趁着还多少有些记忆，记录下来。_
 
 
 #### 由真实故事引入
