@@ -9,9 +9,11 @@
  1. [Digital Image Processing](/Digital Image Processing)
 
 #### 想法
- 1. [2013-4-12](2013-4-12)
+ 1. [细节，理解，语言](Thoughts/Details, Understanding and Language Learning)
 
 #### 日志
- 1.[C++ 内置指针与智能指针性能比较](Compare between performance of C++ raw Point and Smart Point) 
- 1.[用 Python 实现的 HTTP 服务器](How to make a simple http server in Python)
-    
+ 1. [C++ 内置指针与智能指针性能比较](Compare between performance of C++ raw Point and Smart Point) 
+ 1. [用 Python 实现的 HTTP 服务器](How to make a simple http server in Python)
+ 1. [基于 Python 的远程桌面](Remote Desktop)
+ 1. [学完大学课程你能做什么？](What You Can Do After Learning Such Courses)
+ 
