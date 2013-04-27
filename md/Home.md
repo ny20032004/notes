@@ -10,7 +10,7 @@
 
 #### [想法(Thoughts)](/Thoughts)
  1. [细节，理解，语言](/Thoughts/Details, Understanding and Language Learning)
- 1. [学完大学课程你能做什么？](/Thoughts/What Can You Do After Learning Such Courses)
+ 1. [学完大学课程你能做什么？](/Thoughts/What Can You Do After Learning Such Courses in College)
 
 #### [折腾(Just Do It)](/Just Do it)
  1. [C++ 内置指针与智能指针性能比较](/Just Do it/Compare between performance of C++ raw Point and Smart Point) 
