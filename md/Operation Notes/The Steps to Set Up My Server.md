@@ -19,9 +19,11 @@ Written by [shonenada](http://shonenada.com) on 2013-4-28
             -A INPUT -m state --state NEW -m udp -p tcp --dport 22 -j ACCEPT
             -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
  1. authorized_keys：
-  2. * Linux 下生成 公钥/密钥 对：`ssh-keygen -t rsa` 生成 公钥: `~/.ssh/id_rsa.pub`，密钥：`~/.ssh/id_rsa`。
-     * Windows 下生成 公钥/密钥 对：使用 [puttygen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 工具。**注意：不能直接保存公钥，需要在窗口中复制，否则公钥是无效的。**
-  2. * Linux：`cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys` .
+  2. 
+     * Linux 下生成 公钥/密钥 对：`ssh-keygen -t rsa` 生成 公钥: `~/.ssh/id_rsa.pub`，密钥：`~/.ssh/id_rsa`。
+     * Windows 下生成 公钥/密钥 对：使用 [puttygen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 工具。 __注意：不能直接保存公钥，需要在窗口中复制，否则公钥是无效的。__
+  2. 
+     * Linux：`cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys` .
      * Windows：上传公钥到 `~/.ssh/authorized_keys`。
  1. sudoer:
   2. `# vi /etc/sudoers` 去掉 `# %wheel..` 前的 "# ": 
@@ -86,28 +88,28 @@ Written by [shonenada](http://shonenada.com) on 2013-4-28
 
 #### 创建 Python Web 应用
 
-  1. 创建应用目录 `$ mkdir ~/srv/` 
-  1. 克隆版本库 `$ git clone git:repository`
-  1. 进入 Virtual env：`$ source ~/venv/bin/activate`
-  1. 安装应用依赖库 `pip install -r ~/srv/requirements.txt`
-  1. 安装 Gunicorn：`$ sudo pip install gunicorn`
-  1. 配置 Gunicorn：`$ gunicorn --daemon --workers 3 --bind 127.0.0.1:8000 wsgi:application`
-  1. 配置 Nginx：`$ sudo vi /etc/nginx/sites-avaliabled/site.shonenada.com.conf`：
+ 1. 创建应用目录 `$ mkdir ~/srv/` 
+ 1. 克隆版本库 `$ git clone git:repository`
+ 1. 进入 Virtual env：`$ source ~/venv/bin/activate`
+ 1. 安装应用依赖库 `pip install -r ~/srv/requirements.txt`
+ 1. 安装 Gunicorn：`$ sudo pip install gunicorn`
+ 1. 配置 Gunicorn：`$ gunicorn --daemon --workers 3 --bind 127.0.0.1:8000 wsgi:application`
+ 1. 配置 Nginx：`$ sudo vi /etc/nginx/sites-avaliabled/site.shonenada.com.conf`：
 
-    server{
-        listen 80;
-        server_name site.shonenada.com;
+        server{
+            listen 80;
+            server_name site.shonenada.com;
 
-        location / {
-            proxy_pass http://127.0.0.1:8000;
-            proxy_redirect off;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real_IP $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            location / {
+                proxy_pass http://127.0.0.1:8000;
+                proxy_redirect off;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real_IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            }
         }
-    }
-  1. 软链接： `$ sudo ln -s /etc/nginx/sites-availabled/site.shonenada.com.conf /etc/nginx/sites-enabled/site.shonenada.com/conf`
-  1. Reload and Restart: `$ sudo systemctl reload nginx.service` `$ sudo systemctl restart nginx.service`
+ 1. 软链接： `$ sudo ln -s /etc/nginx/sites-availabled/site.shonenada.com.conf /etc/nginx/sites-enabled/site.shonenada.com/conf`
+ 1. Reload and Restart: `$ sudo systemctl reload nginx.service` `$ sudo systemctl restart nginx.service`
 
 ### 参考
  1. [Fedora docs: Starting an OpenSSH Server](http://docs.fedoraproject.org/en-US/Fedora/17/html/System_Administrators_Guide/s2-ssh-configuration-sshd.html)
