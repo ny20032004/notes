@@ -1,5 +1,5 @@
 ## 基于 Python 的远程桌面
-  Created by [shonenada](https://github.com/shonenada) on 2013-4-27
+  Created by [shonenada](http://shonenada.com) on 2013-4-27
 
 ### 实现思路
  1. 实现远程桌面的显示

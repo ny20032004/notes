@@ -1,10 +1,10 @@
 ## 高斯列主元消去法 
 
- Created by [shonenada](https://github.com/shonenada) on 2013/4/7
+ Created by [shonenada](http://shonenada.com) on 2013/4/7
 
- Edited by [shonenada](https://github.com/shonenada) on 2013/4/8 : 补充 **算法分析** 与 **参考资料** 
+ Edited by [shonenada](http://shonenada.com) on 2013/4/8 : 补充 **算法分析** 与 **参考资料** 
 
- Edited by [shonenada](https://github.com/shonenada) on 2013/4/12 : 补充 **算法分析**
+ Edited by [shonenada](http://shonenada.com) on 2013/4/12 : 补充 **算法分析**
 
 ### 高斯消元法
 一般线性方程组求解过程（高斯消元法）：
@@ -60,8 +60,8 @@ Xk = (bk(k) - ∑[j=k+1~n](Akj(k) · xj) / Akk(k);
 
 ### 算法分析
  * 精确度分析
-  * [shonenada](https://github.com/shonenada)（2013/4/8): 编写了 [高斯列主元消去法](https://bitbucket.org/shonenada/numerical-method/src/0793a29145d327c8dade621747eb7b7a849157e9/src/cpp/gauss/gauss.cpp?at=master#cl-83) 和 [高斯消元法](https://bitbucket.org/shonenada/numerical-method/src/0793a29145d327c8dade621747eb7b7a849157e9/src/cpp/gauss/gauss.cpp?at=master#cl-197)。使用两种解法进行测试，三组测试结果两种算法都一样。这个问题需要研究下。
-  * [shonenada](https://github.com/shonenada) (2013/4/12): 以上测试精度都在 1&（-15）内。在 double 类型能表示的范围内，所以用两种消元法进行测试结果都一致。当精度提高到 1^(-20)时，普通高斯消元法已无法进行计算。
+  * [shonenada](http://shonenada.com)（2013/4/8): 编写了 [高斯列主元消去法](https://bitbucket.org/shonenada/numerical-method/src/0793a29145d327c8dade621747eb7b7a849157e9/src/cpp/gauss/gauss.cpp?at=master#cl-83) 和 [高斯消元法](https://bitbucket.org/shonenada/numerical-method/src/0793a29145d327c8dade621747eb7b7a849157e9/src/cpp/gauss/gauss.cpp?at=master#cl-197)。使用两种解法进行测试，三组测试结果两种算法都一样。这个问题需要研究下。
+  * [shonenada](http://shonenada.com) (2013/4/12): 以上测试精度都在 1&（-15）内。在 double 类型能表示的范围内，所以用两种消元法进行测试结果都一致。当精度提高到 1^(-20)时，普通高斯消元法已无法进行计算。
  * 时间复杂度
 
 ### 参考资料

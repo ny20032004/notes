@@ -1,6 +1,6 @@
 ## Doolittle
 
-Created by [shonenada](https://github.com/shonenada) on 2013/4/11
+Created by [shonenada](http://shonenada.com) on 2013/4/11
  
 ### 解法思路
 

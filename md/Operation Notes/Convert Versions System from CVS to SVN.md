@@ -1,6 +1,6 @@
 ## 记录：版本库迁移之 CVS 到 SVN
 
- Created by [shonenada](https://github.com/shonenada) on 2013-4-28
+ Created by [shonenada](http://shonenada.com) on 2013-4-28
 
 ### 工具
  1. [Python](http://www.python.org)

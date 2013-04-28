@@ -1,6 +1,6 @@
 ## How to make a simple http server in Python
 
- [shonenada](https://github.com/shonenada) written on 2013/4/18
+ [shonenada](http://shonenada.com) written on 2013/4/18
 
 ### The Process of HTTP Transmission 
  _HTTP_, whose full name is "Hypertext Transfer Protocol", is a application-layer protocol.

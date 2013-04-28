@@ -1,7 +1,5 @@
 ## C++ 内置指针 与 智能指针的性能对比
-  [shonenada](https://github.com/shonenada) written on 2013/4/16
-
-===================================================
+  [shonenada](http://shonenada.com) written on 2013/4/16
 
 我在 [Similar Query and Index in C++](http://bitbucket.org/shonenada/sqai-in-cpp)项目中使用了智能指针。为了了解使用智能指针的性能消耗，我在这项目里进行了性能测试。
 
