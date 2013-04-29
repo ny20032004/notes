@@ -25,6 +25,7 @@ Written by [shonenada](http://shonenada.com) on 2013-4-28
   2. 
      * Linux：`cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys` .
      * Windows：上传公钥到 `~/.ssh/authorized_keys`。
+  2. `chmod 700 ~/.ssh` `chmod 600 ~/.ssh/authorized_keys`  
  1. sudoer:
   2. `# vi /etc/sudoers` 去掉 `# %wheel..` 前的 "# ": 
 
