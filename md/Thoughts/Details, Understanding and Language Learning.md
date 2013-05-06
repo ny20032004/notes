@@ -1,4 +1,4 @@
-## Thoughts
+## Details, Understanding and Language Learning
 
  [shonenada](http://shonenada.com) written on 2013-4-12.
 
