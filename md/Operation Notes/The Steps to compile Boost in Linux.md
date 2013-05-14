@@ -28,11 +28,13 @@ Written by [shonenada](http://shonenada.com) on 2013-5-5
 
 ### 在 CMake(2.8) 中添加 Boost 库
  1. 在 CMakeLists.txt 中添加：
-       set(BOOST_INCLUDE_DIR /usr/local/include/boost-1_53)
-       set(BOOST_LIBRARY_DIR /usr/local/lib)
-       find_package(Boost)
-       include_directories(${BOOST_INCLUDE_DIR})
-       link_directories(${BOOST_LIBRARY_DIR})
-       target_link_libraries(ProjectName ${BOOST_LIBRARIES})
+
+        set(BOOST_INCLUDE_DIR /usr/local/include/boost-1_53)
+        set(BOOST_LIBRARY_DIR /usr/local/lib)
+        find_package(Boost)
+        include_directories(${BOOST_INCLUDE_DIR})
+        link_directories(${BOOST_LIBRARY_DIR})
+        target_link_libraries(ProjectName ${BOOST_LIBRARIES})
 
 ### 参考
+ -- 暂无 --
