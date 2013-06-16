@@ -1,11 +1,3 @@
----
-layout: post
-title: "Smart Pointer"
-date: 2013-06-06 23:46
-comments: true
-categories: 
----
-
 #Smart Pointer
 
 Written by [shonenada.](http://shonenada.com)
@@ -170,7 +162,7 @@ And the result:
 
 ![50,000,000](../~img/smart_pointer/just_allocation_50000000.png)
 
-![100,000,000](../~imgt/smart_pointer/just_allocation_100000000.png)
+![100,000,000](../~img/smart_pointer/just_allocation_100000000.png)
 
 **Conclusion: Compared to raw pointer, smart pointer spends more time on allocating.**
 
