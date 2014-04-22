@@ -1,0 +1,14 @@
+pip's Trap
+##########
+
+:date: 2014-02-01 13:55
+:tags: Python, Thinking
+
+最近在编写基于 Flask 的 RBAC 模块，并发布到 pypi 上。先前发布了 0.1.0 版本。昨晚因为更新了 API，版本也更新到  0.2.0 了。
+
+但是本地执行 ``pip install flask-rbac`` 的时候，却一直安装 0.1.0 的版本。
+
+第一反应就是 pip 的 cache 作怪。因此在另一个目录下 ``virtualenv venv``, ``pip install flask-rbac``，果然安装的是 lastest 版本。
+
+于是在 Google 了 pip 的 cache 所在。
+但是找到的是 **~/.pip/cache** 路径下，这是 pip 在 Linux 下的 cache。没有找到 windows 下，之后用 **everything** 搜 **pip** 找到了路径 **~/AppData/Local/Temp/pip-build** 删除里面的 **flask-rbac** 再次执行 ``pip install flask-rbac``，OK 安装完成。
